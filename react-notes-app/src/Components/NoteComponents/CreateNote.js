@@ -22,12 +22,15 @@ function CreateNote({ textHandler, saveHandler, inputText }) {
           Save
         </button>
       </div>
+      
       <LinearProgress
       className="char__progress"
       variant="determinate"
       value={props}
       />
+      <div className="note__date"></div>
     </div>
+    
   );
 }
 
