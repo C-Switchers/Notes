@@ -27,6 +27,15 @@ function CreateNote({ textHandler, saveHandler, inputText }) {
       className="char__progress"
       variant="determinate"
       value={props}
+      //change the color of progress bar
+      sx={{
+        height: 4,
+        borderRadius: 5,
+        bgcolor: "#e8dce2", // background color of progress bar
+        "& .MuiLinearProgress-bar": {
+          bgcolor: "white", // color of progress bar
+        },
+      }}
       />
       <div className="note__date"></div>
     </div>
