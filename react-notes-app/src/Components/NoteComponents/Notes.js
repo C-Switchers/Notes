@@ -59,7 +59,6 @@ return (
         key={note.id}
         id={note.id}
         text={note.text}
-        //日期？
         date={note.date}
         deleteNote={deleteNote}
       />

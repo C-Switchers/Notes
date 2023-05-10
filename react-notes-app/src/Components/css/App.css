@@ -18,6 +18,16 @@ body {
     padding: 0px 15px;
     min-height: 160vh;
 } 
+
+.input-box {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+  
 .header {
     display: flex;
     width: 100%;
@@ -40,13 +50,20 @@ body {
     grid-gap: 1rem;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
 }
+
 @media screen and (max-width: 900px) {
     .notes {
+        display: grid;
+        grid-gap: 20px;
         grid-template-columns: repeat(2, minmax(300px, 1fr));
+        margin: 20px 0;
     }
 }
 @media screen and (max-width: 500px) {
     .notes {
+        display: grid;
         grid-template-columns: repeat(1, minmax(300px, 1fr));
+        grid-gap: 20px;
+        margin: 20px 0;
     }
 }
